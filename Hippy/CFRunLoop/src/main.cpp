@@ -15,6 +15,13 @@ class Driver {
         Driver();
         ~Driver();
 
+        // Move only
+        Driver(const Driver&) = delete;
+        Driver& operator=(const Driver&) = delete;
+
+        Driver(Driver&&) = default;
+        Driver& operator=(Driver&&) = default;
+
         void Start();
         void Terminate();
         void Notify();
