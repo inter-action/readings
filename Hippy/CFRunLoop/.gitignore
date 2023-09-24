@@ -1,0 +1,10 @@
+*.gch
+*.out
+*.dSYM
+*.o
+
+/llvm
+.vscode
+
+build/
+main
